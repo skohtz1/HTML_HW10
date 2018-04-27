@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Bootstrap Demo</title>
+  <title>Homework10</title>
 
   <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -22,23 +22,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <div class="navbar-brand">Latitude</div>
+                <div class="navbar-brand"><a href="weathermaps.html">Latitude</a></div>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Comparison</a></li> 
-                            <li><a href="#">Data</a></li>
-                            <div class="dropdown">
+
+                        <div class="dropdown">
                                 <button class = "dropbtn">Plots</button>
                               <div class="dropdown-content">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="lat_wind.html">Wind</a></li>
+                                <li><a href="lat_temp.html">Temperature</a></li>
+                                <li><a href="lat_cloud.html">Cloudiness</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
+                                <li><a href="lat_humid.html">Humidity</a></li>
                               </div>
-                            </div>
+                              
+
+                        </div>
+                        <li><a href = "comparisons.html">Comparisons</a></li>
+                        <li><a href = "data.html">Data</a></li>
 
                     </ul>
 
@@ -49,7 +52,81 @@
 
         </div>
 
-</nav>
+
+
+    </nav>
+    <div class = "container">
+            <div class = "row1">
+                <div class = "col-md-8">
+                    <div class = "box box-left">
+                        <h1>Summary</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class = "col-md-4">
+                    <div class = "box box-right">
+                        <h1>Visualization</h1>
+                        <hr>
+                    </div>
+                </div>                
+            </div>
+
+            <div class = "row2">
+                <div class = "col-md-5">
+                    <a target="_blank" href="assets/images/lat_wspeed.png">
+                        <img class = "col-xs-12" img src="assets/images/lat_wspeed.png" alt="Wind Map" float: left>
+                    </a>
+                </div>
+                <div class = "col-md-3">
+                    <p>
+                        <br>
+                        The purpose of this project was to analyze how weather changes as you
+                        get closer to the equator. To accompllish this nalysis, we first pulled data from the OpenWeatherMap
+                        API to assemble a dataset on over 500 cities. 
+                        <br>
+                        <br>
+                        After assembling the dataset, we used Matpllotlib to plot various
+                        aspects of the weathere vs latitude. 
+                    </p>
+                </div>
+                <div class = "col-md-2">
+                    <a target="_blank" href="assets/images/lat_cloud.png">
+                        <img class = "col-xs-12" img src="assets/images/lat_cloud.png" alt="Wind Map">
+                    </a>
+                    <a target="_blank" href="assets/images/lat_humid.png">
+                        <img class = "col-xs-12" img src="assets/images/lat_humid.png" alt="Wind Map">
+                    </a>
+                </div>
+                <div class = "col-md-2">
+                        <a target="_blank" href="assets/images/lat_temp.png">
+                            <img class = "col-xs-12" img src="assets/images/lat_temp.png" alt="Wind Map">
+                        </a>
+                        <a target="_blank" href="assets/images/lat_wspeed.png">
+                            <img class = "col-xs-12" img src="assets/images/lat_wspeed.png" alt="Wind Map">
+                        </a>
+                </div>
+            
+            </div>
+            <div class = "row3">
+                <div class = "col-md-8">
+
+                    <p>
+                        Factors we looked at included:
+                        temperature, cloudiness, wind speed, humidity. The site provides the sources
+                        data and visualizations created as a part of the analysis, as well as 
+                        explanations and descriptions of any trendsd and correlations witnessed.
+
+                    </p>
+                </div>
+
+
+
+            </div>
+
+
+    </div>
+
+
 
 
 
